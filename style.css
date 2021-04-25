@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(6, 6, 59);
+}
+.container {
+    border: 1px solid rgb(4, 4, 32);
+    background-color: rgb(4, 4, 32);
+    border-radius: 8px;
+    display: grid;
+    max-width: 474px;
+    padding: 20px;
+    height: 510px;
+    position: relative;
+    margin: 60px auto;
+    box-shadow:  0 0 30px rgb(4, 4, 32);
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 150px repeat(5, 50px);
+}
+
+.container.active{
+    background-color: rgb(91, 178, 207);
+    border: 1px solid rgb(91, 178, 207);
+    box-shadow: 0 0 30px rgb(91, 178, 207);
+}
+.box{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+.box.active{
+    color: black;
+}
+.sign{
+    background-color: rgb(20, 117, 150);
+    font-size: 32px;
+}
+
+.sign:hover{
+    background-color: rgb(22, 139, 179);
+}
+.num{
+    background-color: rgb(7, 7, 65);
+    font-size: 22px;
+}
+.num:hover{
+    background-color: rgb(9, 9, 85);
+}
+.show{
+    grid-column: 1 / span 4;
+    font-size: 28px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.clean{
+    grid-column: 1 / span 2;
+    background-color: rgb(167, 11, 11);
+    font-size: 22px;
+}
+.clean:hover{
+    background-color: rgb(192, 14, 14);
+}
+.zero{
+    grid-column: 1/ span 2;
+}
+.changer{
+    width: 40%;
+    margin: 0 auto;
+    height: 6vh;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.light{
+    cursor: pointer;
+    /* border: 1px solid lightblue; */
+    background-color: rgb(28, 185, 238);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px  rgb(28, 185, 238);
+    padding: 6px 10px;
+    font-size: 18px;
+}
+
+.dark{
+    display: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px  rgb(7, 7, 65);
+    background-color: rgb(7, 7, 65);
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 18px;
+}
